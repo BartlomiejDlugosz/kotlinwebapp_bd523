@@ -1,3 +1,11 @@
 h1 {
+    color: magenta;
+}
+
+html {
+    background-color: red;
+}
+
+p {
     color: blue;
 }

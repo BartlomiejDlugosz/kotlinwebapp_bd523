@@ -1,4 +1,5 @@
-<html lang="EN">
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <link rel="stylesheet" href="/assets/style.css">
         <title>Kotlin WebApp</title>
