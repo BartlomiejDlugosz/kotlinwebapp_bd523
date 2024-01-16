@@ -21,6 +21,18 @@
         <input type="text" name="words[word5]" id="word5">
         <input type="submit" value="Submit">
     </form>
+    <ul>
+        <#list results as result>
+            <li>
+                <#list result.charScores as charScore>
+                    ${charScore.first}
+                    <sub>
+                        ${charScore.second}
+                    </sub>
+                </#list> - ${result.score}
+            </li>
+        </#list>
+    </ul>
 </body>
 
 </html>
