@@ -29,6 +29,11 @@ class PostsDatabase {
     println("Inserted... ${post.title}")
   }
 
+  fun removePost(id: String) {
+    val query = connection.createStatement()
+    query.executeUpdate("DELETE FROM posts WHERE id = ${id};")
+  }
+
   fun loadAllPosts(): List<Post> {
     val query = connection.prepareStatement("SELECT * FROM posts")
     return query.executeQuery().asListOfPosts()
